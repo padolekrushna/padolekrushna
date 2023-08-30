@@ -2,5 +2,6 @@
     🌱 I’m currently learning :- Python
     🤔 I’m looking for help with :-python & ML
     💬 Ask me about:- Anything (Not my personal life)
-    📫 How to reach me: Linkedin ,Mail
+    📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/
+                        Mail = krushnapadole18@gmail.com
     ⚡ Fun fact: Right now I'm looking at you, 'cause you're looking at me.
