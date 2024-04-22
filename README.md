@@ -1,5 +1,5 @@
         I'm Krushna Padole
-    🌱 I’m currently learning :- Python
+    🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
     🤔 I’m looking for help with :-python & ML
     💬 Ask me about:- Anything (Not my personal life)
     📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/
