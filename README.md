@@ -1,12 +1,12 @@
 # 💫 About Me:
     I'm Krushna Padole
-    <br>🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
-    <br>🤔 I’m looking for help with :-python & ML
-    <br>💬 Ask me about:- Anything (Not my personal life)
-    <br>📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                   
-    <br>Gmail = krushnapadole18@gmail.com
-    <br>⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.
-    <br>gitHub profile link = https://github.com/padolekrushna
+    🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
+    🤔 I’m looking for help with :-python & ML
+    💬 Ask me about:- Anything (Not my personal life)
+    📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                   
+    Gmail = krushnapadole18@gmail.com
+    ⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.
+    gitHub profile link = https://github.com/padolekrushna
 
 
 ## 🌐 Socials:
