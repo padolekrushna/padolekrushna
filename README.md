@@ -1,5 +1,12 @@
 # 💫 About Me:
-    I'm Krushna Padole<br>🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.<br>🤔 I’m looking for help with :-python & ML<br>💬 Ask me about:- Anything (Not my personal life)<br>📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                    <br>Gmail = krushnapadole18@gmail.com<br>⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.<br>gitHub profile link = https://github.com/padolekrushna
+    I'm Krushna Padole
+    <br>🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
+    <br>🤔 I’m looking for help with :-python & ML
+    <br>💬 Ask me about:- Anything (Not my personal life)
+    <br>📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                   
+    <br>Gmail = krushnapadole18@gmail.com
+    <br>⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.
+    <br>gitHub profile link = https://github.com/padolekrushna
 
 
 ## 🌐 Socials:
@@ -20,9 +27,6 @@
 
 ---
 [![](https://visitcount.itsvg.in/api?id=padolekrushna&icon=6&color=0)](https://visitcount.itsvg.in)
-
-  ## 💰 You can help me by Donating
-  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/9960161764@fam) 
 
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
