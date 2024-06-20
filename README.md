@@ -1,5 +1,7 @@
 # 💫 About Me:
-    I'm Krushna Padole
+    ### Hello Everyone, I'm Krushna Padole [ ](https://i.pinimg.com/originals/bb/82/21/bb82217d6c6a89cad939f8c8567f6171.gif)!
+<img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
+
     🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
     🤔 I’m looking for help with :-python & ML
     💬 Ask me about:- Anything (Not my personal life)
@@ -28,5 +30,11 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=padolekrushna&icon=6&color=0)](https://visitcount.itsvg.in)
 
+ <h1 align = 'Center'>Watch a 🐍 eating my contribution graph</h1>
+<p align="center">
+  <img src="https://github.com/sakshiisaxena/sakshiisaxena/blob/output/github-contribution-grid-snake.svg" alt="snake"></center>
+</p>
+
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
