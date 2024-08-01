@@ -30,9 +30,4 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=padolekrushna&icon=6&color=0)](https://visitcount.itsvg.in)
 
- <h1 align = 'Center'>Watch a 🐍 eating my contribution graph</h1>
-<p align="center">
-  <img src="https://github.com/sakshiisaxena/sakshiisaxena/blob/output/github-contribution-grid-snake.svg" alt="snake"></center>
-</p>
-
 
