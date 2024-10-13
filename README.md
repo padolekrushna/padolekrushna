@@ -2,13 +2,13 @@
 # Hello Everyone, I'm Krushna Padole [ ](https://i.pinimg.com/originals/bb/82/21/bb82217d6c6a89cad939f8c8567f6171.gif)!
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
 
-    🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
-    🤔 I’m looking for help with :-python & ML
-    💬 Ask me about:- Anything (Not my personal life)
-    📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                   
-    Gmail = krushnapadole18@gmail.com
-    ⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.
-    gitHub profile link = https://github.com/padolekrushna
+🌱 I’m currently learning :- Python , ML , AI , Power bi , Excell , R programming.
+🤔 I’m looking for help with :-python & ML
+💬 Ask me about:- Anything (Not my personal life)
+📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                   
+Gmail = krushnapadole18@gmail.com
+⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.
+ gitHub profile link = https://github.com/padolekrushna
 
 
 ## 🌐 Socials:
