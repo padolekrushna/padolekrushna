@@ -8,7 +8,7 @@
 📫 How to reach me: Linkedin = https://www.linkedin.com/in/krushna-padole-70466a252/<br>                   
  Gmail = krushnapadole18@gmail.com
 ⚡ Fun fact: Right now I'm looking at you, 'because you're looking at me'.
- gitHub profile link = https://github.com/padolekrushna
+ 
 
 
 ## 🌐 Socials:
