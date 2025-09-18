@@ -1,7 +1,7 @@
 # 💫 About Me:
 # Hello Everyone, I'm Krushna Padole [ ](https://i.pinimg.com/originals/bb/82/21/bb82217d6c6a89cad939f8c8567f6171.gif)!
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
-<h1 align="center">Hi 👋, I'm Krushna Padole</h1>
+
 <h3 align="center">AI/ML Engineer & Data Scientist | NLP & Time Series Specialist | AWS, PyTorch, MLOps | Building Scalable AI Solutions</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=padolekrushna&label=Profile%20views&color=0e75b6&style=flat" alt="padolekrushna" /> </p>
