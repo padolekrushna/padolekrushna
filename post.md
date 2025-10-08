@@ -1,12 +1,4 @@
-
-
-> **Excited to share a proud moment in my professional journey — I’ve officially earned the Oracle Cloud Infrastructure 2025 Certified Generative AI Professional credential!**
-
-Here’s the updated LinkedIn post with that change:
-
----
-
-🚀 **Level Up Unlocked!**  
+ **Level Up Unlocked!**  
 **Excited to share a proud moment in my professional journey — I’ve officially earned the Oracle Cloud Infrastructure 2025 Certified Generative AI Professional credential!** 🧠✨
 
 This certification helped me strengthen key GenAI skills like:  
