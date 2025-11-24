@@ -1,1 +1,9 @@
-https://youtu.be/eaWMhb7MA48?si=BkdDW3OaKwB8YxiV
+all_checks = [
+    CheckEnum.NESCOM.value,
+    CheckEnum.SIMILARITY.value,
+    CheckEnum.QUALITY.value,
+    CheckEnum.GRAMMAR.value,
+    CheckEnum.STANDARDS_COMMITTEE.value,
+    CheckEnum.TECHNICAL_SUGGESTIONS.value,
+    CheckEnum.STAKEHOLDERS.value
+]
