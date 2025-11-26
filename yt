@@ -1,9 +1,9 @@
-all_checks = [
-    CheckEnum.NESCOM.value,
-    CheckEnum.SIMILARITY.value,
-    CheckEnum.QUALITY.value,
-    CheckEnum.GRAMMAR.value,
-    CheckEnum.STANDARDS_COMMITTEE.value,
-    CheckEnum.TECHNICAL_SUGGESTIONS.value,
-    CheckEnum.STAKEHOLDERS.value
-]
+- Review the **clarity rules** for PAR carefully.
+- Examine the **input_field** against each rule.
+- The evaluation should not be **case-insensitive**.
+- Do NOT flag domain-specific or valid technical terms such as 
+  "power-specific capabilities", "frequency-dependent behaviour",
+  “system-level constraints”, etc.
+- Only flag unclear wording when the sentence structure itself is ambiguous,
+  NOT because the phrase introduces a term not defined elsewhere.
+
