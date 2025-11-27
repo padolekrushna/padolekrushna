@@ -1,18 +1,25 @@
-- **Do NOT suggest introducing or adding acronyms if they are not present in the input field. Only evaluate what is already written.**
+- **CRITICAL ACRONYM RULE**: 
+  - If acronyms exist in the input field, they must remain completely untouched.
+  - Do NOT add, introduce, or insert acronyms (e.g., "(AI)", "(IoT)") if they are not already present in the input field.
+  - Do NOT convert full terms like "Artificial Intelligence" into "Artificial Intelligence (AI)".
+  - Only acronyms already written in the input are acceptable; never suggest adding new ones.
+- **If the feedback contains ANY request to expand, define, modify, or ADD acronyms, IGNORE that specific feedback entirely.**
 
 
-- Do NOT suggest converting full terms into acronyms or introducing new acronyms that are not already in the input field.
+- **Do NOT suggest adding acronym abbreviations after full terms (e.g., do not change "Artificial Intelligence" to "Artificial Intelligence (AI)").**
+- Consider the points mentioned in the feedback in the input evaluation and give suggestions accordingly, **but completely ignore any feedback that requests acronym expansion, definition, modification, OR addition.**
 
-Example 2 (Acronym Protection):
 
-Input: "Standard Test Procedure for Signal Processing in Wearable Devices"
+Example 2 (No Acronym Addition):
 
-Feedback: "Change 'Test Procedure' to 'Test Method' for consistency."
+Input: "Recommended Practice for Ethically Aligned Design of Artificial Intelligence in Adaptive Systems"
+
+Feedback: "Ensure terminology consistency with IEEE standards."
 
 Response:
 
 {{
-  "suggestion": ["The term 'Test Procedure' should be revised to 'Test Method' to align with established IEEE terminology.", "Revised Version: 'Standard Test Method for Signal Processing in Wearable Devices'"]
+  "suggestion": ["The term 'Adaptive Systems' should be revised to 'Adaptive Instructional Systems' for consistency with similar approved IEEE PAR documents.", "Revised Version: 'Recommended Practice for Ethically Aligned Design of Artificial Intelligence in Adaptive Instructional Systems'"]
 }}
 
-Note: No acronyms were added or suggested since none existed in the original input.
+Note: "Artificial Intelligence" remains as full text without adding "(AI)" abbreviation.
