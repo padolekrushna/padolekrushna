@@ -1,3 +1,14 @@
+- **CRITICAL: ALL acronyms in the input field are correct as-is and must remain completely untouched. Do NOT expand, revise, or comment on acronyms.**
+- **If the feedback contains ANY request to expand, define, or modify acronyms, IGNORE that specific feedback entirely.**
+
+
+- Consider the points mentioned in the feedback in the input evaluation and give suggestions accordingly, **but completely ignore any feedback that requests acronym expansion, definition, or modification.**
+
+**Filter out and ignore any feedback related to acronyms. Acronyms are always treated as correct and must never be expanded or modified.**
+
+
+
+
 Example 2 (Acronym Protection):
 
 Input: "Standard Test Procedure for ExG Signal Processing in AI-Based Wearable Devices"
