@@ -1,25 +1,5 @@
-- **CRITICAL ACRONYM RULE**: 
-  - If acronyms exist in the input field, they must remain completely untouched.
-  - Do NOT add, introduce, or insert acronyms (e.g., "(AI)", "(IoT)") if they are not already present in the input field.
-  - Do NOT convert full terms like "Artificial Intelligence" into "Artificial Intelligence (AI)".
-  - Only acronyms already written in the input are acceptable; never suggest adding new ones.
-- **If the feedback contains ANY request to expand, define, modify, or ADD acronyms, IGNORE that specific feedback entirely.**
-
-
-- **Do NOT suggest adding acronym abbreviations after full terms (e.g., do not change "Artificial Intelligence" to "Artificial Intelligence (AI)").**
-- Consider the points mentioned in the feedback in the input evaluation and give suggestions accordingly, **but completely ignore any feedback that requests acronym expansion, definition, modification, OR addition.**
-
-
-Example 2 (No Acronym Addition):
-
-Input: "Recommended Practice for Ethically Aligned Design of Artificial Intelligence in Adaptive Systems"
-
-Feedback: "Ensure terminology consistency with IEEE standards."
-
-Response:
-
-{{
-  "suggestion": ["The term 'Adaptive Systems' should be revised to 'Adaptive Instructional Systems' for consistency with similar approved IEEE PAR documents.", "Revised Version: 'Recommended Practice for Ethically Aligned Design of Artificial Intelligence in Adaptive Instructional Systems'"]
-}}
-
-Note: "Artificial Intelligence" remains as full text without adding "(AI)" abbreviation.
+**CRITICAL - Role Terms vs Gender-Specific Terms:**
+- Role identifiers such as "technicians", "managers", "engineers", "employees", "contractors", "personnel", "workers", "staff", "operators", "supervisors", "analysts", "developers", "administrators" are **NOT gender-specific** and should **NEVER** be flagged.
+- Only flag **explicitly gendered terms** such as: "chairman" (use "chair"), "manpower" (use "workforce"), "businessman" (use "businessperson"), "policeman" (use "police officer"), "fireman" (use "firefighter"), "stewardess" (use "flight attendant"), "waitress" (use "server"), etc.
+- Do NOT flag neutral plural role nouns or job titles.
+- Only flag terms where gender is embedded in the word itself (e.g., words ending in -man, -woman, -ess, or using gendered pronouns like he/she when referring generically).
