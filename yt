@@ -1,24 +1,18 @@
-- **CRITICAL: ALL acronyms in the input field are correct as-is and must remain completely untouched. Do NOT expand, revise, or comment on acronyms.**
-- **If the feedback contains ANY request to expand, define, or modify acronyms, IGNORE that specific feedback entirely.**
+- **Do NOT suggest introducing or adding acronyms if they are not present in the input field. Only evaluate what is already written.**
 
 
-- Consider the points mentioned in the feedback in the input evaluation and give suggestions accordingly, **but completely ignore any feedback that requests acronym expansion, definition, or modification.**
-
-**Filter out and ignore any feedback related to acronyms. Acronyms are always treated as correct and must never be expanded or modified.**
-
-
-
+- Do NOT suggest converting full terms into acronyms or introducing new acronyms that are not already in the input field.
 
 Example 2 (Acronym Protection):
 
-Input: "Standard Test Procedure for ExG Signal Processing in AI-Based Wearable Devices"
+Input: "Standard Test Procedure for Signal Processing in Wearable Devices"
 
 Feedback: "Change 'Test Procedure' to 'Test Method' for consistency."
 
 Response:
 
 {{
-  "suggestion": ["The term 'Test Procedure' should be revised to 'Test Method' to align with established IEEE terminology.", "Revised Version: 'Standard Test Method for ExG Signal Processing in AI-Based Wearable Devices'"]
+  "suggestion": ["The term 'Test Procedure' should be revised to 'Test Method' to align with established IEEE terminology.", "Revised Version: 'Standard Test Method for Signal Processing in Wearable Devices'"]
 }}
 
-Note: Acronyms "ExG" and "AI" remain unchanged in the revised version.
+Note: No acronyms were added or suggested since none existed in the original input.
