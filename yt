@@ -1,5 +1,2 @@
-**CRITICAL - Role Terms vs Gender-Specific Terms:**
-- Role identifiers such as "technicians", "managers", "engineers", "employees", "contractors", "personnel", "workers", "staff", "operators", "supervisors", "analysts", "developers", "administrators" are **NOT gender-specific** and should **NEVER** be flagged.
-- Only flag **explicitly gendered terms** such as: "chairman" (use "chair"), "manpower" (use "workforce"), "businessman" (use "businessperson"), "policeman" (use "police officer"), "fireman" (use "firefighter"), "stewardess" (use "flight attendant"), "waitress" (use "server"), etc.
-- Do NOT flag neutral plural role nouns or job titles.
-- Only flag terms where gender is embedded in the word itself (e.g., words ending in -man, -woman, -ess, or using gendered pronouns like he/she when referring generically).
+      "value": "The stakeholders include technicians, managers, contractors, employees, engineers, operators, supervisors, and administrators who will collaborate on system implementation.",
+      "value": "The chairman will coordinate with businessmen, policemen, and firemen to ensure manpower is sufficient for the project implementation.",
