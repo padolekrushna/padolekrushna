@@ -1,9 +1,13 @@
-- Review the **clarity rules** for PAR carefully.
-- Examine the **input_field** against each rule.
-- The evaluation should not be **case-insensitive**.
-- Do NOT flag domain-specific or valid technical terms such as 
-  "power-specific capabilities", "frequency-dependent behaviour",
-  “system-level constraints”, etc.
-- Only flag unclear wording when the sentence structure itself is ambiguous,
-  NOT because the phrase introduces a term not defined elsewhere.
+Example 2 (Acronym Protection):
 
+Input: "Standard Test Procedure for ExG Signal Processing in AI-Based Wearable Devices"
+
+Feedback: "Change 'Test Procedure' to 'Test Method' for consistency."
+
+Response:
+
+{{
+  "suggestion": ["The term 'Test Procedure' should be revised to 'Test Method' to align with established IEEE terminology.", "Revised Version: 'Standard Test Method for ExG Signal Processing in AI-Based Wearable Devices'"]
+}}
+
+Note: Acronyms "ExG" and "AI" remain unchanged in the revised version.
