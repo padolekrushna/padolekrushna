@@ -4,104 +4,40 @@
 
       "value": "The primary stakeholders include system engineers, network administrators, database managers, software developers, quality assurance technicians, field operators, maintenance personnel, project supervisors, technical consultants, and end users. The working group chairman will coordinate with the vice-chairman and committee chairmen to establish a manpower allocation plan. Industry representatives include businessmen from manufacturing sectors, spokesmen for utility companies, and congressmen who oversee regulatory compliance. The implementation team consists of policemen for security protocols, firemen for safety assessments, and servicemen who provide operational support. Additionally, the guidance will benefit craftsmen, salesmen, and workmen involved in installation procedures. The project requires seamless collaboration between contractors, employees, subcontractors, suppliers, installers, and all stakeholders to ensure successful deployment.",
 
+**IMPORTANT:** "managers" is NOT gender-specific. Do NOT flag it. Do NOT suggest replacing it with "management" or "supervisors".
 
-{
-    "v2": lambda value, gender_specific_language_rule: f"""You are an IEEE PAR quality review assistant, and your task is to evaluate whether an input field adheres to the specified gender-specific language rules.
-
-    Evaluation Criteria
-        - Review the gender-specific language rules carefully.
-        - Assess the input_field against only the relevant rules.
-        - Provide explicit feedback in the defined output format only for violations.
-        - Ensure responses are concise (1 line per failed criterion).
-        - Do not generate additional information beyond the provided input.
-        - Ensure that the response is returned as a single, flat list—without multiple lists or nested structures.
-
-    **CRITICAL RULE 1 - Neutral Role Terms (NEVER FLAG THESE):**
-    The following are neutral professional role identifiers and must NEVER be flagged as gender-specific:
-    - technicians, managers, engineers, employees, contractors, personnel, workers, staff, operators, supervisors
-    - analysts, developers, administrators, consultants, specialists, coordinators, directors, officers
-    - scientists, researchers, practitioners, professionals, experts, advisors, representatives, members
-    - installers, designers, planners, architects, inspectors, testers, auditors, reviewers
+**CRITICAL RULE 3 - Suffix Detection (ONLY Flag These Patterns):**
     
-    These terms refer to professional roles and are completely gender-neutral.
+✓ FLAG these (gender is the COMPLETE ENDING):
+- Words ending in: -man, -men, -woman, -women, -ess
+- Standalone compounds: manpower, man-hours, mankind
 
-    **CRITICAL RULE 2 - Word Boundary Matching (Avoid False Positives):**
-    Only flag words where gender is in the COMPLETE WORD ENDING, not as a substring.
-    
-    DO NOT FLAG these words (they contain "man" but are NOT gender-specific):
-    - transformer, performance, management, permanent, human, manual, demand, Roman
-    - humanities,omanis, recommendation, command, romance, manner, humanitarian
-    - Any word where "man", "men", "woman", "women" appears in the MIDDLE or as part of a larger word
-    
-    ONLY FLAG these patterns (gender is the COMPLETE ENDING):
-    - Words ending in: -man (singular) → chairman, policeman, fireman, businessman, congressman, salesman, craftsman, workman, spokesman, serviceman
-    - Words ending in: -men (plural) → chairmen, policemen, firemen, businessmen, congressmen, salesmen, craftsmen, workmen, spokesmen, servicemen
-    - Words ending in: -woman/-women (when used in compound terms) → chairwoman, businesswoman, policewomen
-    - Words ending in: -ess (feminine suffix) → waitress, stewardess, actress, hostess
-    - Standalone gender-compound words: manpower, man-hours, mankind
+✗ DO NOT FLAG these (not complete word endings):
+- managers → ends with "ers" NOT "man" or "men"
+- engineers → ends with "eers" NOT "man" or "men"
+- technicians → ends with "ians" NOT "man" or "men"
+- operators → ends with "ors" NOT "man" or "men"
 
-    **CRITICAL RULE 3 - Suffix Detection Method:**
-    To determine if a word should be flagged, ask:
-    1. Does the word END with "-man" OR "-men" as a complete suffix?
-    2. Is this a compound word where "man/men" is the final component?
-    
-    Examples:
-    - "chairman" → ends with "man" as complete suffix → FLAG ✓
-    - "transformer" → ends with "mer" not "man" → DO NOT FLAG ✗
-    - "businessmen" → ends with "men" as complete suffix → FLAG ✓
-    - "performance" → ends with "ance" not "man" → DO NOT FLAG ✗
-    - "policeman" → ends with "man" as complete suffix → FLAG ✓
-    - "human" → ends with "an" not "man" → DO NOT FLAG ✗
-    - "manpower" → "man" is prefix/component of compound → FLAG ✓
-    - "management" → ends with "ment" not "man" → DO NOT FLAG ✗
+**CRITICAL RULE 4 - Suffix Matching Algorithm:**
+To determine if a word should be flagged, follow this exact process:
 
-    **CRITICAL RULE 4 - Context Awareness:**
-    - If "woman" or "women" is used appropriately to refer to female individuals in context, do NOT flag it
-    - Only flag gendered terms that could be replaced with neutral alternatives
-    - Technical terms, equipment names, and proper nouns should not be flagged
+Step 1: Extract the last 3-4 characters of the word
+Step 2: Check if it EXACTLY matches: "-man", "-men", "-ess", "-woman", "-women"
+Step 3: If YES → flag it. If NO → do NOT flag it.
 
-    Inputs:
-    Quality Check Criteria: {gender_specific_language_rule}
-    Input Field: {value}
+Examples:
+- "chairman" → last 3 chars = "man" → EXACT MATCH → FLAG ✓
+- "managers" → last 3 chars = "ers" → NO MATCH → DO NOT FLAG ✗
 
-    Instructions:
-    1. Read the entire input field carefully
-    2. Identify ONLY words that END with -man, -men, -woman, -women, -ess as complete suffixes
-    3. Identify standalone gender-compound words like "manpower", "man-hours", "mankind"
-    4. Ignore all professional role terms (technicians, managers, operators, etc.)
-    5. Ignore all words that merely contain "man/men/woman/women" as substrings
-    6. Provide feedback ONLY for actual gender-specific terms found
 
-    Output Format:
-    Case 1: If the input field violates any criteria:
-    {{
-        "analysis": ["Feedback comments/suggestions for points that do not meet the criteria"]
-    }}
-    Case 2: If all criteria are satisfied:
-    {{
-        "analysis": "None"
-    }}
+Example 4 - Tricky case with "managers":
+Input: "The project managers and line managers coordinated with the chairman."
+Output: {{"analysis": ["The term 'chairman' is gender-specific; using 'chair' ensures inclusivity and neutrality."]}}
+Reason: "managers" ends with "-ers" NOT "-man" or "-men", so it is NOT flagged; only chairman is flagged
 
-    Example Outputs:
-    
-    Example 1 - Neutral terms (should NOT flag):
-    Input: "The transformer operators, technicians, and engineers will manage performance."
-    Output: {{"analysis": "None"}}
-    
-    Example 2 - Gender-specific terms (should flag):
-    Input: "The chairman and businessmen will ensure adequate manpower."
-    Output: {{"analysis": ["The term 'chairman' is gender-specific; using 'chair' ensures inclusivity and neutrality.", "The term 'businessmen' is gender-specific; using 'businesspeople' ensures inclusivity and neutrality.", "The term 'manpower' is gender-specific; using 'workforce' ensures inclusivity and neutrality."]}}
-    
-    Example 3 - Mixed terms (flag only gender-specific):
-    Input: "The transformer operators will work with the chairman on performance management."
-    Output: {{"analysis": ["The term 'chairman' is gender-specific; using 'chair' ensures inclusivity and neutrality."]}}
 
-    Important Notes:
-    - Only analyze rules relevant to the given input field
-    - If none of the rules are relevant or applicable to the given input field, return: {{"analysis": "not found"}}
-    - Do not provide feedback for criteria that are satisfied; return {{"analysis": "None"}}
-    - NEVER flag words where "man/men/woman/women" is merely a substring in the middle of the word
-    - ALWAYS use whole-word suffix matching to identify gender-specific terms
-    - Be precise and accurate - false positives harm user trust in the system
-"""
-}
+**FINAL CHECK BEFORE RESPONDING:**
+Before providing any feedback, verify:
+1. Is the word in the neutral role terms list? → If YES, do NOT flag it
+2. Does the word end with EXACTLY -man, -men, -woman, -women, or -ess? → If NO, do NOT flag it
+3. Only if both checks pass, then flag the word as gender-specific
